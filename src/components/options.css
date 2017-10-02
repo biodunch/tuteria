@@ -1,0 +1,46 @@
+.optionSelected .radio:checked ~ div {
+  border-color: #64B413;
+}
+
+.optionBox {
+  background: #fff;
+  width: 100%;
+  position: relative;
+  border: 2px solid #B8B5B5;
+}
+
+.smallBox {
+  position: absolute;
+  background:#B8B5B5;
+  height: 22px;
+  width: 22px;
+  top: 0%;
+  right: 0%;
+}
+
+.optionSelected .radio:checked ~ .optionBox div:last-child {
+  background: #64B413;
+}
+
+.smallBox::after {
+  border-width:2px;
+  border-color: white;
+  border-style: solid ;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 15%;
+  display: block;
+  content: ' ';
+}
+
+.optionLabel{
+  background: #FFF;
+  border: 1px solid #B8B5B5;
+  padding: 4px;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+}
